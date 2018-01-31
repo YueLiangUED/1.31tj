@@ -1,0 +1,184 @@
+/*loading*/
+#loader {
+  font-size: .2rem;
+  text-align: center;
+  line-height: 12.06rem;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.8);
+}
+/*首页*/
+.firPage {
+  display: none;
+  width: 7.5rem;
+  height: 12.06rem;
+  background: rgba(0, 0, 0, 0.8);
+}
+.firPage main {
+  position: relative;
+  width: 7.5rem;
+  height: 10.79rem;
+  background: url("../images/firBg.png") center no-repeat;
+  background-size: cover;
+}
+.firPage main div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.firPage main > div:nth-child(1) {
+  bottom: 1.84rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  background: url("../images/chai.png") center no-repeat;
+  background-size: cover;
+}
+.firPage main > div:nth-child(2) {
+  bottom: .96rem;
+  width: 2.24rem;
+  height: .48rem;
+  background: url("../images/rule.png") center no-repeat;
+  background-size: cover;
+}
+.firPage main > div:nth-child(3) {
+  display: none;
+  box-sizing: border-box;
+  padding-top: .65rem;
+  bottom: .7rem;
+  width: 4.7rem;
+  height: 2.95rem;
+  background: url("../images/tcBg.png") center no-repeat;
+  background-size: cover;
+}
+.firPage main > div:nth-child(3) p {
+  font-size: .24rem;
+  line-height: .4rem;
+  text-align: center;
+  color: #c11f11;
+}
+.firPage main > div:nth-child(3) div {
+  position: absolute;
+  bottom: .44rem;
+  width: 1.93rem;
+  height: .63rem;
+  background: url("../images/qdBtn.png") center no-repeat;
+  background-size: cover;
+}
+/*规则页*/
+.rulePage {
+  display: none;
+  box-sizing: border-box;
+  padding: 1.65rem .84rem 1.65rem .74rem;
+  width: 7.5rem;
+  height: 12.06rem;
+  background: url("../images/ruleBg.png") center no-repeat;
+  background-size: cover;
+}
+.rulePage ul {
+  overflow: scroll;
+  width: 5.94rem;
+  height: 8.77rem;
+}
+.rulePage ul li {
+  font-size: .2rem;
+  text-align: justify;
+  line-height: .4rem;
+  color: #333333;
+}
+.rulePage ul li span {
+  font-weight: bold;
+  color: #aa1407;
+}
+.rulePage div:last-child {
+  margin: .2rem auto;
+  width: 1.7rem;
+  font-size: .34rem;
+  text-align: center;
+  color: #aa1407;
+  border-bottom: 2px solid #aa1407;
+}
+/*CSS3*/
+.animated {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+@-webkit-keyframes swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+@keyframes swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+.swing {
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-animation-name: swing;
+  animation-name: swing;
+}
